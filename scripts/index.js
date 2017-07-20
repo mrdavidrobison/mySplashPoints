@@ -12,4 +12,20 @@ $(document).ready(function(){
   var password = $("#password");
   var passwordTransfer = firstName.val();
 
-})
+  $("#lp-pom-button-12").click(function(){
+
+    window.location.href("https://signup.thanx.com/splash/join/start");
+
+  });
+
+  $(".primary-color style-2-text");
+
+  $("#user_first_name").val(firstNameTransfer);
+  $("#user_last_name").val(lastNameTransfer);
+  $("#user_email").val(emailAddTransfer);
+  $("#user_password").val(passwordTransfer);
+
+  $("btn.btn-primary.full-width").click();
+
+});
+
