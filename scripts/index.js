@@ -14,18 +14,24 @@ $(document).ready(function(){
 
   $("#lp-pom-button-12").click(function(){
 
-    window.location.href("https://signup.thanx.com/splash/join/start");
+    var url = "https://signup.thanx.com/splash/join/start"
+    url = url.substring(0, url.indexOf('?'));
+    window.location.href = url;
 
   });
 
-  $(".primary-color style-2-text");
+  $(document).ready(function(){
 
-  $("#user_first_name").val(firstNameTransfer);
-  $("#user_last_name").val(lastNameTransfer);
-  $("#user_email").val(emailAddTransfer);
-  $("#user_password").val(passwordTransfer);
+    $(".primary-color.style-2-text").click();
 
-  $("btn.btn-primary.full-width").click();
+    $("#user_first_name").val(firstNameTransfer);
+    $("#user_last_name").val(lastNameTransfer);
+    $("#user_email").val(emailAddTransfer);
+    $("#user_password").val(passwordTransfer);
+
+    $("btn.btn-primary.full-width").click();
+
+  });
 
 });
 
