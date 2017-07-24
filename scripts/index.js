@@ -12,26 +12,14 @@ $(document).ready(function(){
   var password = $("#password");
   var passwordTransfer = firstName.val();
 
-  $("#lp-pom-button-12").click(function(){
+  $(".primary-color.style-2-text").click();
 
-    var url = "https://signup.thanx.com/splash/join/start"
-    url = url.substring(0, url.indexOf('?'));
-    window.location.href = url;
-
-  });
-
-  $(document).ready(function(){
-
-    $(".primary-color.style-2-text").click();
-
-    $("#user_first_name").val(firstNameTransfer);
-    $("#user_last_name").val(lastNameTransfer);
-    $("#user_email").val(emailAddTransfer);
-    $("#user_password").val(passwordTransfer);
-
-    $("btn.btn-primary.full-width").click();
-
-  });
+  $("#user_first_name").value = firstNameTransfer;
+  $("#user_last_name").value = lastNameTransfer;
+  $("#user_email").value = emailAddTransfer;
+  $("#user_password").value = passwordTransfer;
 
 });
+
+document.forms[0].submit();
 
